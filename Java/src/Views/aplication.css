@@ -1,0 +1,16 @@
+    
+.toggle-button:selected {
+        
+        -fx-border-width: 1;
+        -fx-blend-mode: darken;
+        -fx-opacity: 1;
+}
+
+.button:pressed{
+        
+        -fx-border-width: 1;
+        -fx-blend-mode: darken;
+        -fx-opacity: 1;
+}
+    
+    

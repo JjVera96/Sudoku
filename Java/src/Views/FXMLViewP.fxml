@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2B4198;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.FXMLViewPController">
+   <children>
+      <Button fx:id="boton" cache="true" cacheHint="SCALE" contentDisplay="CENTER" depthTest="ENABLE" layoutX="290.0" layoutY="229.0" mnemonicParsing="false" onAction="#SetView" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #2A3150; -fx-background-image: url(&quot;sudoku.jpg&quot;);" stylesheets="@aplication.css" text="Nuevo Juego" textFill="#f6ff00ea">
+         <font>
+            <Font name="Segoe Print Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label alignment="CENTER" layoutX="62.0" layoutY="85.0" prefHeight="86.0" prefWidth="477.0" text="Bienvenido Sudoku" textFill="#dddb2e">
+         <font>
+            <Font name="Segoe Print Bold" size="48.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Button fx:id="Salir" contentDisplay="CENTER" layoutX="290.0" layoutY="298.0" mnemonicParsing="false" onAction="#BotonSalir" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #2A3150;" stylesheets="@aplication.css" text="Salir" textFill="#f6ff00eb">
+         <font>
+            <Font name="Segoe Print Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="iv1" cache="true" fitHeight="150.0" fitWidth="200.0" layoutX="62.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+   <effect>
+      <InnerShadow choke="0.25" height="133.67" radius="67.07749999999999" width="136.64" />
+   </effect>
+</AnchorPane>

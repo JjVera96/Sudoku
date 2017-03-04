@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="725.0" style="-fx-background-color: #E9576B;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_ControllerS.FXMLSudokuSController">
+   <children>
+      <GridPane fx:id="tablero" gridLinesVisible="true" layoutX="52.0" layoutY="214.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="454.0" style="-fx-border-color: black; -fx-border-width: 2;">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="30.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="30.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="30.0" prefWidth="50.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="30.0" prefWidth="50.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="30.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="30.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="30.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="30.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="30.0" prefWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label layoutX="249.0" layoutY="33.0" prefHeight="64.0" prefWidth="139.0" text="JoJuKu" textFill="#f5b921">
+         <font>
+            <Font name="Segoe Print Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="66.0" layoutY="189.0" prefHeight="17.0" prefWidth="28.0" text="1">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="116.0" layoutY="189.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="2">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="163.0" layoutY="189.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="3">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="216.0" layoutY="189.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="4">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="265.0" layoutY="189.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="5">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="318.0" layoutY="189.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="6">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="365.0" layoutY="189.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="7">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="415.0" layoutY="189.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="8">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="467.0" layoutY="189.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="9">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="231.0" prefHeight="17.0" prefWidth="28.0" text="1">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="12.0" layoutY="279.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="2">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="12.0" layoutY="330.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="3">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="384.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="4">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="430.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="5">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="480.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="6">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="529.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="7">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="579.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="8">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="626.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="32.0" text="9">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Col" layoutX="117.0" layoutY="126.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#BotonInsertar" opacity="0.5" prefHeight="30.0" prefWidth="30.0" />
+      <TextField fx:id="Fil" layoutX="265.0" layoutY="126.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#BotonInsertar" opacity="0.5" prefHeight="30.0" prefWidth="30.0" />
+      <TextField fx:id="Num" layoutX="397.0" layoutY="126.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#BotonInsertar" opacity="0.5" prefHeight="30.0" prefWidth="30.0" />
+      <Button fx:id="insertar" layoutX="467.0" layoutY="129.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#BotonInsertar" opacity="0.63" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #2A3150;" stylesheets="@../Views/aplication.css" text="Insertar" textFill="#f5b921">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="#f5b921" layoutX="42.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Col [1-9]:" wrappingWidth="76.517578125">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f5b921" layoutX="198.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fil [1-9]:" wrappingWidth="67.51758666336536">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#f5b921" layoutX="341.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="borrar" layoutX="550.0" layoutY="286.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Delete" opacity="0.63" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #2A3150;" stylesheets="@../Views/aplication.css" text="Borrar" textFill="#f5b921">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ToggleButton fx:id="Candidatos" layoutX="550.0" layoutY="218.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#BotonCandidatos" opacity="0.63" prefHeight="30.0" prefWidth="139.0" style="-fx-background-color: #2A3150;" stylesheets="@../Views/aplication.css" text="Mostrar Candidatos" textFill="#f5b921">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+      <Button fx:id="Resolver" layoutX="550.0" layoutY="253.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#BotonResolver" opacity="0.63" prefHeight="30.0" prefWidth="77.0" style="-fx-background-color: #2A3150;" stylesheets="@../Views/aplication.css" text="Resolver" textFill="#f5b921">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <MenuBar layoutY="2.0" opacity="0.5">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+                  <MenuItem fx:id="Abrir" mnemonicParsing="false" onAction="#BotonAbrir" text="Abrir" />
+                  <MenuItem fx:id="Guardar" mnemonicParsing="false" onAction="#BotonGuardar" text="Guardar" />
+                  <MenuItem mnemonicParsing="false" text="Cerrar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="restar" layoutX="553.0" layoutY="564.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Restart" opacity="0.63" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #2A3150;" stylesheets="@../Views/aplication.css" text="Volver" textFill="#f5b921">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="salir" layoutX="553.0" layoutY="611.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#BotonCerrar" opacity="0.63" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #2A3150;" stylesheets="@../Views/aplication.css" text="Salir" textFill="#f5b921">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <effect>
+      <InnerShadow choke="0.28" height="92.16" radius="46.3225" width="95.13" />
+   </effect>
+</AnchorPane>
